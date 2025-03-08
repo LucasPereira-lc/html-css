@@ -18,6 +18,7 @@
 body {
     background-color: rgba(10, 10, 255, 0.705);
     font-family: var(--fonte-padrao);
+    min-height: 100%;
 }
 
 a {
@@ -34,21 +35,30 @@ header {
     background-color: black;
     padding: 20px;
     text-align: center;
-    min-height: 170px;
-    padding-top: 40px;
-    padding-bottom: 25px;
 }
 
 header > h1 {
     color: white;
     font-family: var(--fonte-destaque);
+    font-variant: small-caps;
     font-size: 10vh;
     font-weight: bold;
+    padding-top: 50px;
 }
 
 header > p {
     color: white;
     font-family: var(--fonte-padrao);
+    padding-bottom: 50px;
+}
+
+section {
+    font-family: var(--fonte-poema);
+    font-size: 3.5vw;
+    padding-left: 30px;
+    padding-top: 7vh;
+    padding-bottom: 8vh;
+    line-height: 2em;
 }
 
 section.normal {
@@ -73,14 +83,6 @@ section.imagem > p {
     padding: 3px;
 }
 
-section {
-    font-family: var(--fonte-poema);
-    font-size: 3.5vw;
-    padding-left: 30px;
-    padding-top: 7vh;
-    padding-bottom: 8vh;
-    line-height: 2em;
-}
 section > p {
     padding-bottom: 2em;
 }
