@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merienda:wght@300..900&family=Passion+One:wght@400;700;900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --fonte-padrao: Verdana, Helvetica, Sans-serif;
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
     --fonte-destaque: 'Passion One', sans-serif;
     --fonte-poema: "Sriracha", cursive;
 }
@@ -18,7 +18,7 @@
 body {
     background-color: rgba(10, 10, 255, 0.705);
     font-family: var(--fonte-padrao);
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 a {
@@ -32,8 +32,7 @@ a:hover {
 }
 
 header {
-    background-color: black;
-    padding: 20px;
+    background-color: black;   
     text-align: center;
 }
 
@@ -41,7 +40,7 @@ header > h1 {
     color: white;
     font-family: var(--fonte-destaque);
     font-variant: small-caps;
-    font-size: 10vh;
+    font-size: 10vw;
     font-weight: bold;
     padding-top: 50px;
 }
@@ -56,9 +55,13 @@ section {
     font-family: var(--fonte-poema);
     font-size: 3.5vw;
     padding-left: 30px;
-    padding-top: 7vh;
-    padding-bottom: 8vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     line-height: 2em;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -66,25 +69,29 @@ section.normal {
     color: black;
 }
 
-#img01 {
-    background-image: url('../imagens/background001.jpg');
-    background-size: cover; 
-}
-
-#img02 {
-    background-image: url('../imagens/background002.jpg');
+section.imagem {
+    background-color: rgb(48, 48, 48);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.418); /*inset = Sombra para dentro*/
     background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.432);
+    background-color: rgba(0, 0, 0, 0.521);
     color: white;
-    width: 410px;
-    padding: 3px;
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 2px 2px 0px black;
 }
 
-section > p {
-    padding-bottom: 2em;
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
 }
 
 footer {
@@ -94,5 +101,5 @@ footer {
 }
 footer > p {
     color: white;
-    font-size: 1em;
+    font-size: 1.7vw;
 }
