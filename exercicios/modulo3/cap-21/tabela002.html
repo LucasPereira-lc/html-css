@@ -10,8 +10,16 @@
         }
 
         table {
-            width: 450px;
+            width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         td.num {
@@ -27,6 +35,13 @@
             background-color: black;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px; /* Cola ele no top */
+            background-color: black;
+        }
+
         tbody > tr:nth-child(odd) { /* Impar */ /* 2n-1 */
             background-color: white;
         }
@@ -40,6 +55,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
          TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
