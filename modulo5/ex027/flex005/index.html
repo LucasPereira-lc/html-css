@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox Centralizado</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: lightseagreen
+        }
+
+        main {
+            background-color: lightcoral;
+            width: 90vw;
+            height: 90vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main > section {
+            background-color: lightcyan;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
 </head>
 <body>
-    
+    <main>
+        <section>
+            <h1>Tela de Login</h1>
+        </section>
+    </main>
 </body>
 </html>
