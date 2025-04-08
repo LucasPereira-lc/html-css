@@ -15,17 +15,30 @@
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-            flex-basis: 300px;
+            flex-basis: 200px;
+        }
+
+        div#A {
             flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        div#B {
+            flex-shrink: 0;
+            flex-grow: 2;
+        }
+
+        div#C {
+            flex-shrink: 2;
             flex-grow: 1;
         }
     </Style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
+        <div class="item" id="A">A</div>
+        <div class="item" id="B">B</div>
+        <div class="item" id="C">C</div>
     </div>
 </body>
 </html>
