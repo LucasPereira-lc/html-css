@@ -26,7 +26,7 @@ header {
 
 header > h1 {
     color: white;
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
 
     flex: 0 0 200px;
 }
@@ -47,7 +47,7 @@ header > span#burguer:hover {
 }
 
 header > nav {
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
 
     display: flex;
     flex-flow: row wrap;

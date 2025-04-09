@@ -12,7 +12,7 @@
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-        <nav id="items">
+        <nav id="itens">
             <a href="#">Opção 1</a>
             <a href="#">Opção 2</a>
             <a href="#">Opção 3</a>
@@ -29,10 +29,18 @@
 
     <script>
         function clickMenu() {
-            if (display.style.items == 'flex') {
-                items.style.display == 'none'
+            if (itens.style.display == 'flex') {
+                itens.style.display = 'none'
             } else {
-                items.style.display == 'flex'
+                itens.style.display = 'flex'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 580) {
+                itens.style.display = 'flex'
+            }else {
+                itens.style.display = 'none'
             }
         }
     </script>
