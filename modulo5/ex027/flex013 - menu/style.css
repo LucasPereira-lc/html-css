@@ -17,15 +17,41 @@ body {
 header {
     background-color: rgb(196, 59, 59);
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1 {
     color: white;
     border: 1px dotted black;
+
+    flex: 0 0 200px;
 }
 
 header > nav {
     border: 1px dotted black;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+header > nav > a {
+    background-color: rgb(15, 15, 92);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header > nav > a:hover {
+    background-color: rgb(108, 108, 161);
+    transition: background-color .4s;
 }
 
 main {
