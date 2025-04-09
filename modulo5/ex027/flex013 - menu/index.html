@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Flexbox</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 580px)">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <nav>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav id="items">
             <a href="#">Opção 1</a>
             <a href="#">Opção 2</a>
             <a href="#">Opção 3</a>
@@ -23,5 +26,15 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum assumenda vero voluptate modi dolores eius sunt, voluptatibus numquam! Quibusdam assumenda nisi pariatur aliquam quidem sapiente tempore impedit sunt exercitationem ad? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis sit vel facilis odit accusantium inventore, illo a repellat dolorem atque voluptatem ab, deleniti voluptatibus eos accusamus ratione culpa dolores officiis.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eveniet reiciendis consequatur sint adipisci temporibus recusandae, consequuntur dicta minima velit ipsam aliquid? Quasi, dicta ex suscipit adipisci sapiente pariatur rem.</p>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (display.style.items == 'flex') {
+                items.style.display == 'none'
+            } else {
+                items.style.display == 'flex'
+            }
+        }
+    </script>
 </body>
 </html>
