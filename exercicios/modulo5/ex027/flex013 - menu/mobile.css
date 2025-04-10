@@ -19,3 +19,7 @@ header > nav {
 header > nav > a {
     width: 90vw;
 }
+
+main {
+    width: 90vw;
+}
