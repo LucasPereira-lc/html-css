@@ -1,57 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Flexbox</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 580px)">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Flexbox</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Meu Site</h1>
-        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-        <nav id="itens">
-            <a href="#">Opção 1</a>
-            <a href="#">Opção 2</a>
-            <a href="#">Opção 3</a>
-            <a href="#">Opção 4</a>
-            <a href="#">Opção 5</a>
-            <a href="#">Opção 6</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Teste de flexbox</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum assumenda vero voluptate modi dolores eius sunt, voluptatibus numquam! Quibusdam assumenda nisi pariatur aliquam quidem sapiente tempore impedit sunt exercitationem ad? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis sit vel facilis odit accusantium inventore, illo a repellat dolorem atque voluptatem ab, deleniti voluptatibus eos accusamus ratione culpa dolores officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse quisquam provident porro reiciendis error dolorem, veritatis natus, placeat minima culpa doloremque dolore ad, itaque quasi magni deserunt ullam. In!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eveniet reiciendis consequatur sint adipisci temporibus recusandae, consequuntur dicta minima velit ipsam aliquid? Quasi, dicta ex suscipit adipisci sapiente pariatur rem.</p>
-    </main>
-
-    <main>
-        <h2>Teste de flexbox</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod mollitia porro accusantium possimus iure. Reprehenderit quam pariatur exercitationem perspiciatis soluta quae ipsa, nesciunt ex labore unde, sapiente sunt explicabo officia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt aperiam adipisci atque id, ducimus quos temporibus quas? Maiores, minima deleniti? Fuga iure voluptas perspiciatis. Adipisci eligendi ullam esse at libero!</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel non, commodi consequuntur magnam perferendis explicabo labore, possimus provident modi sapiente asperiores esse corrupti! Dignissimos incidunt necessitatibus sint dolores quibusdam accusantium!</p>
-    </main>
-
-    <script>
-        function clickMenu() {
-            if (itens.style.display == 'flex') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'flex'
-            }
-        }
-
-        function mudouTamanho() {
-            if (window.innerWidth >= 580) {
-                itens.style.display = 'flex'
-            }else {
-                itens.style.display = 'none'
-            }
-        }
-
-        window.onload = mudouTamanho
-        window.onresize = mudouTamanho
-    </script>
+  <header>
+    <h1>Meu Site</h1>
+    <nav>
+      <a href="#">Opção 1</a>
+      <a href="#">Opção 2</a>
+      <a href="#">Opção 3</a>
+      <a href="#">Opção 4</a>
+      <a href="#">Opção 5</a>
+      <a href="#">Opção 6</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Teste de Flexbox</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam officia fugit inventore quaerat corporis, magni nesciunt odio itaque magnam quam hic alias cumque, vitae voluptatibus obcaecati fuga quod consequuntur cupiditate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque hic nam rerum dolorum. Eveniet laborum architecto porro a laboriosam eligendi praesentium alias temporibus, odio soluta dolorum quis, beatae iste saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure error odit ut corrupti natus, ipsam officia adipisci sunt eveniet! Earum quod culpa officiis corporis iste voluptas vel doloremque optio quos.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa laudantium odit provident voluptate quod dolor laboriosam dolorum vel quasi? Officiis corporis et quaerat tempore maiores, nisi quo ipsam doloremque provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex labore illo ad non doloribus, beatae impedit, in ab dignissimos veritatis, placeat quam delectus autem deserunt aut saepe et omnis fugit.</p>
+  </main>
 </body>
 </html>
