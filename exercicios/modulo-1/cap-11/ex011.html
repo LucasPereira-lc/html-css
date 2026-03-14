@@ -16,7 +16,7 @@
 
         <h1>Reproduzindo Áudio</h1>
         <p>Vamos aprender a reproduzir áudio em HTML5</p>
-        <audio preload="auto" autoplay controls loop>
+        <audio preload="metadata" autoplay controls loop> <!-- Auto: Só carrega o site depois de carregar o audio.  Metadata: Carrega algumas informações do audio.  none: Só carrega o audio quando o usuario clica nele. -->
             <source src="midia/classica.mp3" type="audio/mpeg">
             <source src="midia/classica.ogg" type="audio/ogg">
             <source src="midia/classica.wav" type="audio/wav">
