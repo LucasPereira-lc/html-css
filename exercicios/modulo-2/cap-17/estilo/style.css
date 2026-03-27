@@ -176,7 +176,7 @@ aside > h3 {
 aside > ul {
     columns: 2;
     list-style-position: inside;
-    list-style-type: '\2714\00A0\00A0'; /* 00A0 é um espaçoo */
+    list-style-type: '\2714\00A0\00A0'; /* 00A0 é um espaço */
 }
 
 footer {
