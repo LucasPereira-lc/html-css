@@ -54,8 +54,8 @@ header > h1 {
 header > p {
     font-family: var(--fonte-padrao);
     color: white;
-    margin: auto auto 30px auto;
-    padding: 0px 10px;
+    margin: auto;
+    padding: 0px 10px 50px 10px;
     font-size: 1.2em;
     max-width: 600px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
