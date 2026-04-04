@@ -15,7 +15,7 @@
     padding: 0px;
 }
 
-body {
+html, body {
     background-color: rgba(10, 10, 255, 0.705);
     font-family: var(--fonte-padrao);
     min-height: 100vh;
